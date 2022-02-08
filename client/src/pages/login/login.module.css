@@ -1,0 +1,67 @@
+.login {
+  height: calc(100vh - 50px);
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+}
+
+.left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loginTitle {
+  margin-bottom: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Button */
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.icon {
+  width: 33px;
+  height: 33px;
+  padding-left: 1px;
+  background-color: #fff;
+  margin-left: 1px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.loginButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  height: 35px;
+  width: 200px;
+  cursor: pointer;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 20px;
+  background-color: #4285f4;
+}
+
+.right {
+  flex: 4;
+  height: 100%;
+  background-image: url("../../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
