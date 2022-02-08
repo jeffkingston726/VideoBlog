@@ -6,7 +6,7 @@ function Card({ post }) {
       <span className={styles.title}>{post.title}</span>
       <img src={post.img} alt="" className={styles.img} />
       <p className={styles.desc}> {post.desc}</p>
-      <button className={styles.cardButton}>Leer mas</button>
+      <button className={styles.cardButton}>Saber más</button>
     </div>
   );
 }
