@@ -1,0 +1,33 @@
+.navbar {
+  height: 50px;
+  background-color: rgb(14, 175, 121);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.listItem {
+  margin-right: 20px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
