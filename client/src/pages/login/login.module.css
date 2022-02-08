@@ -15,6 +15,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  -webkit-box-shadow: 0px 10px 36px 12px rgba(0, 0, 0, 0.47);
+  box-shadow: 0px 10px 36px 12px rgba(0, 0, 0, 0.47);
 }
 .loginTitle {
   margin-bottom: 50px;
@@ -56,6 +58,13 @@
   background-color: #4285f4;
 }
 
+.github {
+  background-color: black;
+}
+
+.githubIcon {
+  background-color: transparent;
+}
 .right {
   flex: 4;
   height: 100%;
@@ -64,4 +73,6 @@
   background-position: center;
   background-size: cover;
   object-fit: cover;
+  -webkit-box-shadow: 4px 2px 36px 7px rgba(0, 0, 0, 0.45);
+  box-shadow: 4px 2px 36px 7px rgba(0, 0, 0, 0.45);
 }

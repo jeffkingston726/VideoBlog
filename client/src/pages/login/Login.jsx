@@ -1,5 +1,6 @@
 import styles from "./login.module.css";
 import googleIcon from "../../images/googleIcon.png";
+import githubIcon from "../../images/github.png";
 
 function Login() {
   return (
@@ -10,6 +11,16 @@ function Login() {
           <div className={styles.btnWrapper}>
             <img src={googleIcon} alt="" className={styles.icon} />
             <button className={styles.loginButton}>Log in with Google</button>
+          </div>
+          <div className={styles.btnWrapper}>
+            <img
+              src={githubIcon}
+              alt=""
+              className={`${styles.icon} ${styles.githubIcon}`}
+            />
+            <button className={`${styles.loginButton} ${styles.github}`}>
+              Log in with Github
+            </button>
           </div>
         </div>
         <div className={styles.right}></div>
