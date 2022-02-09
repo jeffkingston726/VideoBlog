@@ -3,6 +3,7 @@ import Card from "../../components/card/Card";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [post, setPost] = useState(null);
@@ -17,6 +18,9 @@ function Home() {
 
   return (
     <div className={styles.home}>
+      <Link className="link" to={`/publish`}>
+        <button className={styles.publishButton}>Create new</button>
+      </Link>
       {post && post.map(post => <Card key={post._id} post={post} />)}
     </div>
   );
