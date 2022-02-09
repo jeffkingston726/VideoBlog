@@ -1,5 +1,4 @@
 import styles from "./home.module.css";
-import { posts } from "../../data";
 import Card from "../../components/card/Card";
 import { useEffect, useState } from "react";
 import axios from "axios";

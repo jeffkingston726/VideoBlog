@@ -16,9 +16,8 @@ function Post() {
       setPost(res.data);
     };
     fetchPosts();
-  }, [location]);
+  }, [path]);
 
-  console.log(post);
   return (
     <div className={styles.post}>
       {<img src={`${PF}testing.jpg`} alt="" className={styles.postImg} />}
