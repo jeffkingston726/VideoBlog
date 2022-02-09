@@ -20,7 +20,9 @@ function Post() {
 
   return (
     <div className={styles.post}>
-      {<img src={`${PF}${post.img}`} alt="" className={styles.postImg} />}
+      {post.img && (
+        <img src={`${PF}${post.img}`} alt="" className={styles.postImg} />
+      )}
       <h1 className={styles.postTitle}>{post.title}</h1>
       <p className={styles.postDesc}>{post.desc}</p>
       <p className={styles.postLongDesc}>{post.longDesc}</p>
