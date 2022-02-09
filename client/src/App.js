@@ -42,7 +42,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={user ? <CreatePost /> : <Navigate to="/login" />}
+            element={user ? <Home /> : <Navigate to="/login" />}
           />
           {/* home */}
           <Route
@@ -52,6 +52,11 @@ function App() {
           <Route
             path="/post/:id"
             element={user ? <Post /> : <Navigate to="/login" />}
+          />
+
+          <Route
+            path="/publish"
+            element={user ? <CreatePost /> : <Navigate to="/login" />}
           />
         </Routes>
       </div>
