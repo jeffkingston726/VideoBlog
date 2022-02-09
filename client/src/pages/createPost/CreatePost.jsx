@@ -24,7 +24,7 @@ function CreatePost() {
       data.append("file", file);
       newPost.img = filename;
       try {
-        const res = await axios.post("/upload", data);
+        const res = await axios.post("http://localhost:5000/api/upload", data);
         console.log(` ${res.data}`);
       } catch (err) {
         console.log(err);
@@ -69,8 +69,22 @@ function CreatePost() {
           onChange={e => setLongDesc(e.target.value)}
         />
 
-        <label className={styles.formTitle}>Image</label>
-        <input type="file" name="" id="" />
+        <label className={styles.formTitle} htmlFor="pictureInput">
+          Image
+        </label>
+        <input
+          type="file"
+          name=""
+          id="pictureInput"
+          onChange={e => setFile(e.target.files[0])}
+        />
+        {file && (
+          <img
+            className={styles.previewPicture}
+            src={URL.createObjectURL(file)}
+            alt=""
+          />
+        )}
 
         <button className={styles.submitButton} onClick={handleSubmit}>
           Submit
