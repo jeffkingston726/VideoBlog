@@ -8,6 +8,8 @@ const passportSetup = require("./passport");
 const express = require("express");
 const app = express();
 
+const authRoute = require("./routes/auth");
+
 app.use(
   cookieSession({
     name: "session",
@@ -26,6 +28,8 @@ app.use(
     credentials: true,
   })
 );
+
+app.use("/auth", authRoute);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port: ${process.env.PORT}`);

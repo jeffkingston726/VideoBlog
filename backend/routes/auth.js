@@ -11,7 +11,7 @@ router.get("/login/failed", (req, res) => {
   });
 });
 
-// Logout successfull
+// login successfull
 router.get("/login/success", (req, res) => {
   if (req.user) {
     res.status(200).json({
@@ -39,3 +39,5 @@ router.get(
     failureRedirect: "/login/failed",
   })
 );
+
+module.exports = router;
