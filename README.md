@@ -1,4 +1,4 @@
-# Video Blog App - Created with React, Node, Express, MongoDB and passportjs for login with google.
+# Video Blog App - Created with  MongoDB, Express, React, Node and passportjs for login with google.
 
 When cloning this project remember to run npm i in the backend and client, this project is using MongoAtlas, fill the .env.example with the required information.
 node must be installed.
