@@ -14,6 +14,7 @@ function Card({ post }) {
           <img src={notFountImg} alt="" className={styles.notFound} />
         )}
         <p className={styles.desc}> {post.desc}</p>
+        <p className={styles.desc}> {post.longDesc}</p>
         <button className={styles.cardButton}>Saber más</button>
       </Link>
     </div>
