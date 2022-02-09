@@ -1,6 +1,6 @@
 import styles from "./login.module.css";
 import googleIcon from "../../images/googleIcon.png";
-import githubIcon from "../../images/github.png";
+//import githubIcon from "../../images/github.png";
 
 function Login() {
   const google = async () => {
