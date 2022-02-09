@@ -5,7 +5,7 @@ import notFountImg from "../../images/notfound.png";
 function Card({ post }) {
   return (
     <div className={styles.card}>
-      <Link className="link" to={`/post/${post.id}`}>
+      <Link className="link" to={`/post/${post._id}`}>
         <span className={styles.title}>{post.title}</span>
         {post.img ? (
           <img src={post.img} alt="" className={styles.img} />

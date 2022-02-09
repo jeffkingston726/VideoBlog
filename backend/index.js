@@ -35,7 +35,7 @@ app.use(passport.session());
 
 app.use(
   cors({
-    origin: "https://localhost:3000/",
+    origin: "http://localhost:3000/",
     method: "GET,POST,PUT,DELETE",
     credentials: true,
   })
@@ -57,7 +57,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 });
 
 app.use("/auth", authRoute);
-app.use("/api/post", postRoute);
+app.use("/api/post", cors(), postRoute);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port: ${process.env.PORT}`);

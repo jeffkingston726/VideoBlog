@@ -16,7 +16,6 @@ function Home() {
     fetchPosts();
   }, [location]);
 
-  console.log(post);
   return (
     <div className={styles.home}>
       {post && post.map(post => <Card key={post._id} post={post} />)}

@@ -1,15 +1,27 @@
 import { useLocation } from "react-router";
 import styles from "./post.module.css";
-import { posts } from "../../data";
+//import { posts } from "../../data";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function Post() {
   const location = useLocation();
-  const path = location.pathname.split("/")[2];
+  const path = location.pathname.split("/")[2]; // Get the id from url
+  const PF = "http://localhost:5000/images/";
+  const [post, setPost] = useState({});
 
-  const post = posts.find(p => p.id.toString() === path);
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const res = await axios.get("http://localhost:5000/api/post/" + path);
+      setPost(res.data);
+    };
+    fetchPosts();
+  }, [location]);
+
+  console.log(post);
   return (
     <div className={styles.post}>
-      <img src={post.img} alt="" className={styles.postImg} />
+      {<img src={`${PF}testing.jpg`} alt="" className={styles.postImg} />}
       <h1 className={styles.postTitle}>{post.title}</h1>
       <p className={styles.postDesc}>{post.desc}</p>
       <p className={styles.postLongDesc}>{post.longDesc}</p>
