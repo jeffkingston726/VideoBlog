@@ -14,3 +14,4 @@ Single post page
 
 Publish a post page
 ![screencapture-localhost-3000-publish-2022-02-09-15_06_38](https://user-images.githubusercontent.com/71179218/153217533-3289601a-1952-4bf1-8873-0d41d5e33809.png)
+![videoblog](https://user-images.githubusercontent.com/71179218/153220358-54f9c6bb-a8a6-4f67-8284-58b605e9fe23.gif)
